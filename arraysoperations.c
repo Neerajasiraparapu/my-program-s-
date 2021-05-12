@@ -22,7 +22,7 @@ void main()
 				scanf("%d",&values);
 				printf("enter the position to insert an array:\n");
 				scanf("%d",&position);
-				for(i=n-1;i>position;i--)
+				for(i=n-1;i>=position;i--)
 				arr[i+1]=arr[i];
 				arr[position]=values;
 				n++;
@@ -51,8 +51,8 @@ void main()
 			{
 				if (arr[i]==values)
 				{
-					count=0;
-					printf("\n the %d values found at position %d .",values);
+					count++;
+					printf("\n the %d values found at position %d .",values,i+1);
 				}
 			}
 			if (count==0)
